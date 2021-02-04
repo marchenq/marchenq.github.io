@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/fa3d2a8a2f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/catalog-menu.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+        Desktop only header, do not show on mobile
+    -->
+    <nav id="desktopHeader" class="d-none d-md-block">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href=""><img class="rounded mx-auto d-block" src="img/header_holder.png" /></a>
+                </div>
+
+                <div class="col-5 col-md-6 col-lg-7 px-sm-4 py-sm-1">
+                    <div class="row">
+                        <a href="#" class="px-1 py-1">Home</a>
+                        <a href="#" class="px-1 py-1">Account</a>
+                        <a href="#" class="px-1 py-1">Contact</a>
+                        <a href="#" class="px-1 py-1">About us</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <button class="input-group-text bg-white button-search"><i
+                                        class="fa fa-search"></i></button>
+                            </span>
+                            <input class="form-control py-2  border custom-search" type="search" value=""
+                                placeholder="Looking for something new..." id="example-search-input">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-2 col-sm-2 text-center p-1">
+                    <div class="p-1"><a href="#"><i class="fa fa-user "></i> Sign in</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 
+        Mobile only menu. This menu should not be visible on desktop!
+    -->
+    <nav id="mobileHeader" class="d-block d-sm-block d-md-none">
+        <div class="d-flex align-items-center justify-content-between p-3">
+            <img class="rounded align-self-center" src="img/header_holder.png" />
+            <div class="input-group px-3">
+                <span class="input-group-prepend">
+                    <button class="input-group-text bg-white button-search"><i class="fa fa-search"></i></button>
+                </span>
+                <input class="form-control py-2  border custom-search" type="search" value=""
+                    placeholder="Looking for something new..." id="example-search-input">
+            </div>
+            <button id="collapse-mob-button" class="btn btn-secondary"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+
+
+
+    <!-- Desktop Side Block. Visible only on large screens! -->
+    <div class="container d-none d-md-block" id="sideBlock">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-2">
+                <a name="" id="departs-btn-desktop" class="btn" href="#" role="button"><i class="fa fa-bars"></i>
+                    Departments</a>
+                <div class="container mt-2">
+                    <div class="row d-block py-1">
+                        <a href="#" class="px-1"><i class="fa fa-fire text-primary"></i> New</a>
+                    </div>
+                    <div class="row d-block py-1">
+                        <a href="#" class="px-1"><i class="fa fa-bolt text-primary"></i> Electronics</a>
+                    </div>
+                    <div class="row d-block py-1">
+                        <a href="#" class="px-1"><i class="fa fa-heartbeat text-primary"></i> Health</a>
+                    </div>
+                    <div class="row d-block py-1">
+                        <a href="#" class="px-1"><i class="fa fa-layer-group text-primary"></i> Other</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+                Desktop main block. This is the block where main information is being displayed.
+            -->
+            <div class="col-md-8 col-lg-9">
+                <div>
+                    <h1>Welcome to Shopiva!</h1>
+                    <h5>This is a place where you find what you need</h5>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-10">
+                            <div class="jumbotron">
+                                <h1 class="display-5">Block Large</h1>
+                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                    calling extra attention to featured content or information.</p>
+                                <hr class="my-4">
+                                <p>It uses utility classes for typography and spacing to space content out within the
+                                    larger container.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-10 col-lg-5">
+                            <div class="jumbotron">
+                                <h1 class="display-5">Block 2</h1>
+                                <p class="lead">Some useful information...</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10 col-lg-5">
+                            <div class="jumbotron">
+                                <h1 class="display-5">Block 3</h1>
+                                <p class="lead">Bla Bla???!!!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 
+                    Feature items slider implementation. Desktop version
+                -->
+                <div class="col-md-8 col-lg-9">
+                    <p><i class="fas fa-bolt"></i> Featured Products</p>
+                    <div class="d-flex justify-content-between">
+                        <!-- 
+                        Item example
+                        -->
+
+                        <!-- Product 1 Example-->
+                        <div class="p-4 mx-2 border rounded">
+                            <!-- Product picture here-->
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/item_imageholder.png" width="auto" height="auto">
+                                </div>
+                            </div>
+
+                            <!-- Product price and next button -->
+                            <div class="row">
+                                <div class="col">
+                                    <b class="py-3 d-block mx-auto text-center">150 AZN</b>
+                                    <button class="d-block mx-auto btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 Example-->
+                        <div class="p-4 mx-2 border rounded">
+                            <!-- Product picture here-->
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/item_imageholder.png" width="auto" height="auto">
+                                </div>
+                            </div>
+
+                            <!-- Product price and next button -->
+                            <div class="row">
+                                <div class="col">
+                                    <b class="py-3 d-block mx-auto text-center">150 AZN</b>
+                                    <button class="d-block mx-auto btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Product 3 Example-->
+                        <div class="p-4 mx-2 border rounded">
+                            <!-- Product picture here-->
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/item_imageholder.png" width="auto" height="auto">
+                                </div>
+                            </div>
+
+                            <!-- Product price and next button -->
+                            <div class="row">
+                                <div class="col">
+                                    <b class="py-3 d-block mx-auto text-center">150 AZN</b>
+                                    <button class="d-block mx-auto btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Product 4 Example-->
+                        <div class="p-4 mx-2 border rounded">
+                            <!-- Product picture here-->
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/item_imageholder.png" width="auto" height="auto">
+                                </div>
+                            </div>
+
+                            <!-- Product price and next button -->
+                            <div class="row">
+                                <div class="col">
+                                    <b class="py-3 d-block mx-auto text-center">150 AZN</b>
+                                    <button class="d-block mx-auto btn btn-primary">Go</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

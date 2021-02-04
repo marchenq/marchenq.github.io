@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/catalog-menu.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/fa3d2a8a2f.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="bodyId">
+    <div class="container-fluid" style="background-color: #0000B0;">
+        <div class="container">
+            <div class="row">
+                <div class="col my-auto">
+                    <a class="navbar-brand" href="">
+                        <img src="logo.png" width="70" height="70" alt="">
+                    </a>
+                </div>
+
+                <!-- We show this buttons only in case of mobile devices -->
+                <div class="col my-auto d-none d-sm-block d-block d-md-none">
+                    <div class="d-flex justify-content-end">
+                        <div class="mx-2">
+                            <button class="btn btn btn-light mx-auto my-1" type="submit"> <i class="fa fa-user"></i>
+                                Profile</button>
+                        </div>
+                        <div class="">
+                            <button class="btn btn btn-light mx-auto my-1" type="submit"> <i
+                                    class="fa fa-shopping-bag"></i> Checkout</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-10 col-md-7 my-3 my-md-auto">
+                    <div class="d-flex justify-content-between">
+                        <button id="menuCatalogBtn" class="btn btn btn-light mx-1 d-block" onclick="openNav()"
+                            type="submit"> <i class="fa fa-th-list"></i><i class="d-none d-sm-none d-lg-inline">
+                                Catalog</i></button>
+                        <div class="input-group">
+                            <input class="form-control py-2 border-right-0 border custom-search" type="search" value=""
+                                placeholder="Find something new..." id="example-search-input">
+                            <span class="input-group-append">
+                                <button class="input-group-text bg-white"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- This buttons are similar to above buttons, but displayed on desktops -->
+                <div class="col my-auto d-none d-md-block d-lg-block d-xl-block">
+                    <button class="btn btn btn-light mx-1" type="submit"> <i class="fa fa-user"></i></button>
+                    <button class="btn btn btn-light mx-1" type="submit"> <i class="fa fa-shopping-bag"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side navigation bar -->
+    <div id="sidenavInstance" class="сatalog-menu-desktop">
+        <div class="container">
+            <div class="row mx-auto p-3">
+                <div class="col-6 col-lg-4 d-block mt-2">
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center"> <i class="fa fa-user"></i> Product Cat 1</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 2</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 3</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 4</a>
+                </div>
+
+                <div class="col-6 col-lg-4 d-block mt-2">
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 5</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 6</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 7</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 8</a>
+                </div>
+
+                <div class="col-6 col-lg-4 d-block mt-2">
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 9</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 10</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 11</a>
+                    <a href="#" class="d-block p-2 m-2 border rounded text-center">Product Cat 12</a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a> -->
+
+
+    </div>
+
+    <div class="container mt-2">
+        <div class="jumbotron">
+            <h1 class="display-4">Omega Store!</h1>
+            <p class="lead">This is some dummy text ;)</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+
+
+    <script src="js/header.js"></script>
+</body>
+
+</html>
