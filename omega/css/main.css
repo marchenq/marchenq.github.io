@@ -1,0 +1,75 @@
+/* Global font installation */ 
+body { 
+    font-family: 'Baloo Bhaina 2', cursive;
+    /* background-color: #edeef0; */
+}
+
+
+/* Styling across all platforms\sizes */ 
+
+/* This button is common for both versions */
+.button-search:hover {
+    color: white !important;
+    background-color: rgba(75, 75, 250, 0.973) !important;
+}
+
+.button-search {
+    transition-duration: 0.3s;
+  }
+
+/*
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ */
+
+
+/*
+    Desktop Version CSS styling
+*/
+#desktopHeader a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#desktopHeader a:hover {
+    color: rgba(75, 75, 250, 0.973);
+    text-decoration: none;
+}
+
+#departs-btn-desktop {
+    background-color: rgba(231, 231, 231, 0.5) !important;
+    color: black;
+}
+
+#sideBlock a {
+    color: black;
+}
+
+#sideBlock a:hover {
+    color: rgba(75, 75, 250, 0.973);
+    text-decoration: none;
+}
+
+/*
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ */
+
+/*
+    Mobile Version styling
+
+*/
+#collapse-mob-button {
+    background-color: rgba(231, 231, 231, 0.5) !important;
+    color: black;
+    border-color: transparent;
+}
+ 
+/*
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ */
